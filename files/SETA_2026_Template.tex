@@ -1,0 +1,197 @@
+\documentclass[12pt,twoside]{article}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[a4paper]{geometry}
+\setlength{\textwidth}{6.3in}
+\setlength{\textheight}{8.8in}
+\setlength{\topmargin}{0pt}
+\setlength{\headsep}{25pt}
+\setlength{\headheight}{0pt}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+\renewcommand\title[1]{\gdef\@title{\reset@font\Large\bfseries #1}}
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                   {2.3ex \@plus.2ex}%
+                                   {\normalfont\large\bfseries}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                                     {-3ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\normalfont\normalsize\bfseries}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+                                     {-2.5ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\normalfont\normalsize\bfseries}}
+
+\def\@runningauthor{}\newcommand{\runningauthor}[1]{\def\runningauthor{#1}}
+\def\@runningtitle{}\newcommand{\runningtitle}[1]{\def\runningtitle{#1}}
+
+\renewcommand{\ps@plain}{%
+\renewcommand{\@evenfoot}{\footnotesize Sequences and Their Applications (SETA) 2026\hfill\thepage}
+\renewcommand{\@oddfoot}{\footnotesize Sequences and Their Applications (SETA) 2026 \hfill\thepage}
+\renewcommand{\@evenhead}{\footnotesize\scshape \hfill\runningauthor\hfill}
+\renewcommand{\@oddhead}{\footnotesize\scshape \hfill\runningtitle\hfill}}
+\pagestyle{plain}
+
+\g@addto@macro\bfseries{\boldmath}
+
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Please remove all other commands that change parameters such as
+% margins or pagesizes.
+
+% we recommend these ams packages
+\usepackage{amsthm,amsmath,amssymb}
+
+% we recommend the graphicx package for importing figures
+\usepackage{graphicx}
+
+% hyperlinks
+\usepackage[colorlinks=true,citecolor=black,linkcolor=black,urlcolor=blue]{hyperref}
+
+% declare theorem-like environments
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{claim}[theorem]{Claim}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{open}[theorem]{Open Problem}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{question}[theorem]{Question}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{note}[theorem]{Note}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Enter a title
+
+\title{A proof of a conjecture on\\sequences with unusual properties}
+
+%% Enter a running title
+
+\runningtitle{A proof of a conjecture on sequences with unusual properties}
+
+%% Enter authors and affiliations
+
+\author{First Author\thanks{First Author is supported by funding organisation xyz.}\\
+\small Department of Mathematics\\[-0.8ex]
+\small Southpole University\\[-0.8ex] 
+\small Southpole, Antarctica\\
+\small\tt author@math.southpole.edu\\
+\and
+Possible Second Author \qquad  Possible Third Author\\
+\small School of Computer Science\\[-0.8ex]
+\small University of Nowhere\\[-0.8ex]
+\small Nowhere, Forgottencountry\\
+\small\tt $\{$psa,pta$\}$@uni.fc
+}
+
+%% Enter running author names
+
+\runningauthor{F.\ Author, P.\ S.\ Author, P.\ T.\ Author}
+
+\date{}
+
+
+\begin{document}
+
+
+\maketitle
+
+\thispagestyle{empty}
+
+\begin{abstract}
+The paper should begin with a clear and informative abstract.
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+We prove a conjecture due to John Smith~\cite{Smith1950} concerning sequences with unusual properties.
+
+\begin{theorem}
+\label{thm:seq}
+Sequences with unusual properties exist.
+\end{theorem}
+
+We shall prove Theorem~\ref{thm:seq} using a new method, which we call the magical method.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{The magical method}
+
+In this section we describe our main method.
+
+
+\begin{lemma}
+\label{lem:technical}
+If a sequence satisfies property A, then it satisfies property B.
+\end{lemma}
+\begin{proof}
+Suppose for a contradiction that a sequences satifies property A, but does not property B. \dots
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Proof of Theorem~\ref{thm:seq}}
+
+In this section we complete the proof of Theorem~\ref{thm:seq}.
+
+\begin{proof}[Proof of Theorem~\ref{thm:seq}]
+Argument \dots. This completes the proof of Theorem~\ref{thm:seq}.
+\end{proof}
+
+%% If you want to use figures, use the following.
+
+% \begin{figure}[!h]
+%   \begin{center}
+%     % use \includegraphics to import figures 
+%     % \includegraphics{filename}
+%   \end{center}
+%   \caption{\label{fig:InformativeFigure} Here is an informative
+%     figure.}
+% \end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Acknowledgements}
+
+Possible acknowledgements.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \bibliographystyle{plain} 
+% \bibliography{ref} 
+% Use BibTeX to create a bibliography
+% then copy and past the contents of your .bbl file into your .tex file
+
+\begin{thebibliography}{1}
+
+\bibitem{Smith1950}
+J.~Smith.
+\newblock A conjecture on sequences with unusual properties.
+\newblock {\em J. Major Results}, 5(2):100--200, 1950.
+
+\end{thebibliography}
+
+\end{document}
