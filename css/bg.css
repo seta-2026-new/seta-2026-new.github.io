@@ -1,0 +1,49 @@
+.topic{
+    position:relative;
+    color: #080808;
+    display:contents;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+}
+
+.highlight-container {
+    background-color: yellow; /* 设置背景颜色 */
+    padding: 0px; /* 可选：添加内边距以增加可读性 */
+    display: inline-block; /* 使容器只占用实际内容的宽度 */
+  }
+
+  /* 添加样式以高亮显示文本 */
+.highlight-text {
+  color: red; /* 设置文本颜色 */
+  font-weight: bold; /* 设置文本粗细 */
+}
+
+.navbar-brand{
+  font-family: Cinzel;
+}
+
+.carousel{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.btn{
+  border-radius: 0px;
+  border:rgb(45 66 99);
+  background-color: rgb(45 66 99);
+}
+tbody, td, tfoot, th, thead, tr{
+  border-color:#c8c6c6;
+  border-style: solid;
+  border-width: 0px; 
+  }
+
+  .accordion-button {
+    font-size: 1.2rem;
+    background-color: #d0e2ff;
+  }
+  

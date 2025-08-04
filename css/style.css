@@ -1,0 +1,347 @@
+
+/* ------------------ Elementos generales -------------------------*/
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+body {
+    background-color: #f8f3f3 ;
+    font-size: 12px;
+    font-family: Verdana, Arial, SunSans-Regular, Sans-Serif,Cinzel;
+    color:#f4eeec;
+    padding:0px;
+    margin:0px;
+    }
+
+    .banner {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    
+    a {color: #CC6600;}
+    
+    a:hover {color: #666;}      
+    
+    
+    h1 {
+    font-size: 19px;
+    /*text-transform:uppercase;*/
+    padding:5px 15px;
+    margin:0px }
+    
+    
+    h2 {
+    font-size:17px;
+    font-weight: normal;
+    margin:0px;}
+    
+    
+    h3 {
+    font-size: 15px;
+    padding:15px 5px;
+    margin:0px; }
+    
+    h4 {
+    font-size:13px;
+    font-weight:900;
+    padding:5px 6px;
+    margin:0px;}
+    
+    h5 {
+    font-size:11px;
+    font-weight:900;
+    padding:5px 6px;
+    margin:0px;}
+    
+    #bold {
+    font-size:11px;
+    font-weight:900;
+    }
+    
+    img.download {vertical-align:middle;}
+    
+    
+    /* ----------container zentriert das layout-------------- */
+    
+    #container {
+    width: 100%;
+    padding:0px;
+    min-height:100%;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    height:100%;
+
+    position: relative;
+    } 
+    
+    
+    /* ----------banner for logo-----------#FFFFD5--- */
+    
+    
+    #logo {
+    text-align: right;
+    border-top: solid 15px;
+    border-bottom: solid 15px;
+    border-color: #f6f6f5;
+    background-image:url('../images/Banner.png') ;
+    background-size:contain;
+    background-color:#f0f0ec;
+    padding-top: 15px;
+    display: flex;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+    }
+    
+    
+    #logo img{
+    
+    }
+    
+    #logo a 
+    {color: #564b47
+    }
+    
+    #logo a:hover
+    {color: #D60808;}
+    
+    
+    #logo h1 {
+    padding: 10px 0 10px 20px;
+    font-size: 23px;
+    letter-spacing: -1px;
+    text-align:left;
+    color: #CC6600;
+    }
+    #logoMayus{
+    font-size:23pt; 
+    font-style: italic;
+    color: #000000; 
+    }
+    
+    #logo h2 {
+    padding: 10px 20px 20px 20px;
+    font-size: 20px;
+    letter-spacing: -1px;
+    text-align:right;
+    color: #999999;
+    }
+    
+    #logo h1 a { 
+    color: #CC6600;
+    text-decoration: none;
+    }
+    #logo h1 a span {
+    color: #000;
+    }
+    #logo h1 a:hover {
+    color: #000;
+    }
+    
+    
+    
+    #up {
+    margin-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 60px;
+    }
+    
+    
+    /* ----------small_box-------------- */
+    
+    
+    /* ----------outer und inner----------------- */
+    #outer{ 
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        background-color:white;
+     } 
+    
+    #inner{ 
+        margin: 0%; 
+        width:70%;    
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    
+    
+    /* --------------left navigavtion------------- */
+    #left {
+     width:195px;
+     height: 350px; 
+     float:left; 
+     position:relative; 
+     margin-left:-195px; 
+     margin-right:0px;
+    
+     }
+    
+    
+    /* -----------------Inhalt--------------------- */
+    #content{ 
+    position:relative; 
+    margin: 0px; 
+    top: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 100px;
+    padding-right: 0px;
+    }
+    
+    p{
+    padding: 3px 8px;
+    margin:0px; 
+    text-align:left;
+    }
+    
+    /* menu a la izquierda */
+    #linkList
+        {
+        position: relative;
+         top: 15px;    
+        left: 0;
+        width: 195px;
+        margin: 10px 0 10px 0;
+    
+            }
+    #lselect ul
+        {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 0 0 30px;
+    
+        }
+    
+    #lselect li {
+      float: left;
+      position: relative;
+      text-align: center;
+      width: 11em;
+      padding: 3px 5px 3px 5px;
+      color: #666;
+      background-color: #FFFFD5;
+      }
+    
+    #lselect ul li a
+        {
+        display: block;
+        font-size: 13px;
+        text-decoration: none;    
+        
+        }
+    
+    #lselect ul li a.c:hover
+        {
+        color: #D60808;
+        }
+    #lselect ul li
+        {
+        font-size: 12px;
+        padding: 5px #ffffff;
+        border-left: 1px solid #cd6000;
+        border-right: 1px solid #cd6000;
+        border-top:1px solid #cd6000;
+        border-bottom:1px solid #cd6000;
+        margin-bottom:2px;
+        }
+    
+    #lselect ul li ul li
+        {
+        font-size: 12px;
+        border-bottom: 0px solid #666;
+        }
+    
+    #management_table {
+    padding:20px;
+    font-size:12px;
+    text-align:justify;
+    border:0;
+    }
+    
+    #management_table td, #management_table th {
+    padding:5px;
+    font-size:12px;
+    text-align:justify;
+    border:1px solid #ccc;
+    }
+    
+    
+    /*  ----------------footer---------------------- */ 
+    #footer-relative {
+        background-color:rgb(45 66 99);
+        color: #fff;
+        text-align: center;
+        /*margin: 1px;*/
+        padding: 20px;
+        bottom: 0px;
+        width: 100%;
+        max-width:100%;
+        box-sizing: border-box;
+        vertical-align: bottom;
+        margin-right: auto;
+        margin-left: auto;
+        position:relative;
+    }
+    
+    #footer {
+        background-color:rgb(45 66 99);
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        /*margin: 1px;*/
+        bottom: 0px;
+        width: 100%;
+        max-width:100%;
+        box-sizing: border-box;
+        vertical-align: bottom;
+        margin-right: auto;
+        margin-left: auto;
+        position:fixed;
+    }
+
+    #page-title{
+        padding-bottom: 1rem;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid #dee2e6;
+      }
+
+    /* Style for the button to remove the border */
+    #toggleAbstractLink {
+            color: gray;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    #toggleAbstractLink:hover {
+        text-decoration: none;
+    }
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 60%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img1{
+    width: 500px;
+    height: 327px;
+}
